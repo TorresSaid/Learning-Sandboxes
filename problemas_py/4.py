@@ -1,3 +1,4 @@
+#BUCLES 2.0
 for i in range(1,21): # 1 to 20
     if i % 2 == 0:
         print(i)

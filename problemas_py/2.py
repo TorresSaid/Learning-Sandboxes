@@ -1,3 +1,4 @@
+#DESICIONES 
 nombre = "Said" 
 estudia = "si" 
 ciudad = "Lima" 

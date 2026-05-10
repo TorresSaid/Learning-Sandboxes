@@ -1,3 +1,4 @@
+#primer problema : VARIABLES Y MEMORIA
 nombre = "Said"       # Variable string 
 estudia = "si"        # Variable string  
 ciudad = "Lima"       # Variable string

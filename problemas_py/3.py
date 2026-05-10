@@ -1,3 +1,4 @@
+##BUCLES
 nombre = "Said" 
 estudia = "yes" 
 ciudad = "Lima" 
