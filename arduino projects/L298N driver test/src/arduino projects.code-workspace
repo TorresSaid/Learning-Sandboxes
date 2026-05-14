@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "L298N driver test",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
