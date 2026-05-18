@@ -6,5 +6,5 @@ persona = {
     "estudia": "si"
 }
 
-print(persona["nombre"])   # Said
-print(persona["edad"])     # 20
+print(persona["nombre"])
+print(persona["edad"])     
