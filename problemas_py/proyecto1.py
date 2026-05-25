@@ -22,8 +22,6 @@ estudiantes = [
     }
 ]
 
-
-while True:
 def imprimir_estudiantes(lista_estudiantes):
     for indice, estudiante in enumerate(lista_estudiantes, start=1):
         print(f"--- Estudiante {indice} ---")
@@ -34,21 +32,35 @@ def imprimir_estudiantes(lista_estudiantes):
         print(f"Curso: {estudiante['curso']}")
         print()
 
+while True:     
+    print ("¿Que desea hacer?")
+    print ("")
+    print ("(1) Imprimir datos de todoslos estudiantes")
+    print ("(2) buscar estudiante por nombre")
+    print ("(3) agregar un nuevo estudiante")
+    print ("(4) ver solo los que estudian actualmente")
+    print ("(0) salir")
+
+    opcion = input("Ingrese el número de la opción deseada: ")
+
+    if opcion == "1":
+        imprimir_estudiantes(estudiantes)       
+    
+    elif opcion == "2":
+        nombre_buscar = input("Ingrese el nombre del estudiante a buscar: ")
+        encontrado = False
+        for estudiante in estudiantes:
+            if estudiante['nombre'].lower() == nombre_buscar.lower():
+                print(f"Nombre: {estudiante['nombre']}")
+                print(f"Edad: {estudiante['edad']}")
+                print(f"Ciudad: {estudiante['ciudad']}")
+                print(f"Estudia: {estudiante['estudia']}")
+                print(f"Curso: {estudiante['curso']}")
+                encontrado = True
+                break
+        if not encontrado:
+            print("Estudiante no encontrado.")
 
 
-for estudiante in estudiantes in enumerate(estudiantes, start=1):
-    while True:
-        respuesta = input(f"¿Deseas imprimir los datos de {estudiante['nombre']}? (s/n): ")
-        if respuesta in {'s', 'n'}:
-            break
-        print("Por favor responde 's' para sí o 'n' para no.")
-    if respuesta == 's':
-        print(f"--- Estudiante {indice} ---")
-        print(f"Nombre: {estudiante['nombre']}")
-        print(f"Edad: {estudiante['edad']}")
-        print(f"Ciudad: {estudiante['ciudad']}")
-        print(f"Estudia: {estudiante['estudia']}")
-        print(f"Curso: {estudiante['curso']}")
 
 
-        
